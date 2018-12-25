@@ -10,7 +10,7 @@ def get_contestant_name(data, occupation)
   data.each do |season, contestants|
     contestants.select do |contestant|
       contestant["occupation"] == occupation
-    end[0..1]
+    end
   end
 end
 
