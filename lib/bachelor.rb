@@ -9,6 +9,7 @@ def get_contestant_name(data, occupation)
   # code here
   data.each do |season, contestants|
     contestants.select do |contestant|
+      binding.pry
       contestant["status"] == "Winner"
     end
   end
