@@ -11,7 +11,7 @@ def get_contestant_name(data, occupation)
     contestants.select do |contestant|
       contestant["occupation"] == occupation
     end
-  end.flatten
+  end.flatten(2)
 end
 
 def count_contestants_by_hometown(data, hometown)
