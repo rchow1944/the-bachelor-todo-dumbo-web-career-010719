@@ -1,6 +1,6 @@
 def get_first_name_of_season_winner(data, season)
   # code here
-  data[season].select do |contestant|
+  data[season].find do |contestant|
     contestant["status"] == "Winner"
   end
 end
